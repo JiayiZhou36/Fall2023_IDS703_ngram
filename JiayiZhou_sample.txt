@@ -1,0 +1,84 @@
+Markov text generation samples
+Jiayi Zhou
+1. Deterministic
+Input 1:
+sentence = ['cat', 'like'] n =2
+corpus = nltk.word_tokenize(
+    nltk.corpus.gutenberg.raw('austen-sense.txt').lower()
+)
+randomize = False
+
+Output 1:
+['cat', 'like', 'him', ',', 'and', 'the', 'same', 'time', ',', 'and']
+
+Input 2:
+sentence = ["plant", "an", "apple", "tree", "help"] n =4
+corpus = nltk.word_tokenize(
+    nltk.corpus.gutenberg.raw('austen-sense.txt').lower()
+)
+randomize = False
+
+Output 2:
+['plant', 'an', 'apple', 'tree', 'help', 'smiling', 'at', 'the', 'quiet', 'archness']
+
+Input 3:
+sentence = ["keep", "working", "hard", "allow", "us", "to"] n =5
+corpus = nltk.word_tokenize(
+    nltk.corpus.gutenberg.raw('austen-sense.txt').lower()
+)
+randomize = False
+
+Output 3:
+['keep', 'working', 'hard', 'allow', 'us', 'to', 'night', ',', "''", 'said']
+
+Input 4:
+sentence = [] n =4
+corpus = nltk.word_tokenize(
+    nltk.corpus.gutenberg.raw('austen-sense.txt').lower()
+)
+randomize = False
+
+Output 4:
+[',', 'and', 'the', 'two', 'miss', 'steeles', ',', 'as', 'he', 'was']
+
+
+2. Stochastic
+Input 1:
+sentence = ['i', 'like'] n =2
+corpus = nltk.word_tokenize(
+    nltk.corpus.gutenberg.raw('austen-sense.txt').lower()
+)
+randomize = True
+
+Output 1:
+['i', 'like', 'it', 'possible', '?']
+
+Input 2:
+sentence = ["keep", "working", "hard"] n =2
+corpus = nltk.word_tokenize(
+    nltk.corpus.gutenberg.raw('austen-sense.txt').lower()
+)
+randomize = True
+
+Output 2:
+['keep', 'working', 'hard', 'that', 'colonel', 'brandon', ',', 'nor', 'attempted', 'no']
+
+Input 3:
+sentence = ["keep", "working", "hard", "allow", "us", "to", "grow"] n =8
+corpus = nltk.word_tokenize(
+    nltk.corpus.gutenberg.raw('austen-sense.txt').lower()
+)
+randomize = True
+
+Output 3:
+['keep', 'working', 'hard', 'allow', 'us', 'to', 'grow', 'a', 'low', 'voice']
+
+Input 4:
+sentence = [] n =4
+corpus = nltk.word_tokenize(
+    nltk.corpus.gutenberg.raw('austen-sense.txt').lower()
+)
+randomize = True
+
+Output 4:
+['thoughtfulness', 'returned', 'on', 'him', 'in', 'their', 'fullest', 'extent', '--', 'and']
